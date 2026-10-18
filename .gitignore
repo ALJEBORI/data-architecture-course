@@ -16,3 +16,9 @@ env/
 
 # System files
 .DS_Store
+# Obsidian Ignore the noisy UI files and cache 
+**/.obsidian/workspace.json
+**/.obsidian/cache/
+**/.obsidian/backups/
+
+
