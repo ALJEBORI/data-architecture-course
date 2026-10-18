@@ -20,6 +20,7 @@ env/
 **/workspace.json
 **/graph.json
 **/.obsidian/cache/
+**/nul
 
 
 
