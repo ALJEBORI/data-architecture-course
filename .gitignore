@@ -1,0 +1,18 @@
+# Credentials and Environment files
+.env
+.env.local
+*.p8
+*.pem
+
+# Database Storage and Docker local states
+pgdata/
+
+# Python environment artifacts
+__pycache__/
+*.pyc
+.venv/
+env/
+.pytest_cache/
+
+# System files
+.DS_Store
