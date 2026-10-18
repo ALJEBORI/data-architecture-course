@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "caseSensitive": false,
+  "wholeWords": true,
+  "minWordLength": 2,
+  "maxOccurrencesPerEditor": 1000,
+  "debounceMs": 25,
+  "extraWordCharacters": "",
+  "highlightActiveOccurrence": true,
+  "androidSelectionGuard": true
+}
