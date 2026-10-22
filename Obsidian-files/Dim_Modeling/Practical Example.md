@@ -138,19 +138,19 @@ theme: grid
 version: 2
 columns:
   - id: c_bjueno
-    name: "**date_key**"
+    name: date_key
   - id: c_r50yr2
-    name: "**full_date**"
+    name: full_date
   - id: c_wgnicj
-    name: "**day_of_week**"
+    name: day_of_week
   - id: c_b1jub0
-    name: "**month_name**"
+    name: month_name
   - id: c_xdnjuz
-    name: "**quarter**"
+    name: quarter
   - id: c_ngh1eq
-    name: "**year**"
+    name: year
   - id: c_kdq9y3
-    name: "**is_weekend**"
+    name: is_weekend
 rows:
   - id: r_26os7q
     cells:
@@ -161,6 +161,28 @@ rows:
       c_xdnjuz: Q4
       c_ngh1eq: "2026"
       c_kdq9y3: "False"
+styles:
+  - target: header.c_bjueno
+    bg: "#7b97ea"
+    bold: true
+  - target: header.c_r50yr2
+    bg: "#6a88e2"
+    bold: true
+  - target: header.c_wgnicj
+    bg: "#7692e5"
+    bold: true
+  - target: header.c_b1jub0
+    bg: "#8189ee"
+    bold: true
+  - target: header.c_xdnjuz
+    bg: "#789de8"
+    bold: true
+  - target: header.c_ngh1eq
+    bg: "#8da5ec"
+    bold: true
+  - target: header.c_kdq9y3
+    bg: "#798cec"
+    bold: true
 theme: grid
 ---
 ```
@@ -173,8 +195,6 @@ Suppose a business analyst asks:
   
 
 > _"What was our total revenue and total units sold for 'Electronics' in Europe during Q4 2026?"_
-> 
->   
 
 Because of the Star Schema structure, writing this SQL query is simple and intuitive:
 
@@ -210,11 +230,5 @@ GROUP BY
 ### Step 3: Why This Design Works so Well
 
 1. **Simple Joins (1-to-Many):** Every `JOIN` goes directly from the central fact table to a dimension table. You don't have to string together 10 different nested tables to find out what category a product belongs to.
-    
-      
-    
 2. **Denormalization for Speed:** Notice that `category` is stored directly inside `dim_product`, rather than creating a separate `categories` table. This slight redundancy is intentional—it trades a tiny bit of storage space to avoid expensive extra database joins.
-    
-      
-    
 3. **Aggregations are Fast:** The fact table contains pre-calculated numbers (`quantity`, `total_amount`), making functions like `SUM()` and `AVG()` execute rapidly even over billions of rows.
