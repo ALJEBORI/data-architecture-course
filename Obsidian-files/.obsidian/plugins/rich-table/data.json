@@ -1,0 +1,13 @@
+{
+  "customChoices": [],
+  "allowReadingViewEdit": false,
+  "singleClickEdit": true,
+  "defaultTheme": "grid",
+  "nativeCellEditor": true,
+  "ctrlColHiddenButtons": {
+    "locked": [],
+    "unlocked": [],
+    "xlsxRef": []
+  },
+  "lastSeenVersion": "1.5.0"
+}

@@ -1,0 +1,9 @@
+Them: Dracula for Obsidian
+Plugin:
+  - colored text   "https://github.com/erincayaz", "Erinc Ayaz"
+  - editing toolbar   "https://github.com/cumany","Cuman"
+  - editor width slider  "https://github.com/MugishoMp",MugishoMp
+  - highlightr plugin   "https://github.com/chetachiezikeuzor", "chetachi"
+  - obsidian git  "https://ko-fi.com/vinzent",
+  - table tune  DH mini
+  - workspace word highlight 

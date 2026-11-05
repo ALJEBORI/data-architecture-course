@@ -3,7 +3,8 @@
   "editor-width-slider",
   "highlightr-plugin",
   "editing-toolbar",
-  "table-editor-obsidian",
   "workspace-word-highlight",
-  "colored-text"
+  "colored-text",
+  "rich-table",
+  "better-tables"
 ]
